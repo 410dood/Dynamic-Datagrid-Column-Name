@@ -1,0 +1,32 @@
+<widget id="DataGridDynamicLabel.widget.DataGridDynamicLabel" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Datagrid Dynamic Label</name>
+    <description>Dummy widget</description>
+    <icon/>
+<properties>
+       <property key="gridName" type="string" required="true" defaultValue="">
+           <caption>Grid name</caption>
+           <category>Display</category>
+           <description>Name of the data grid widget.</description>
+       </property>
+       <property key="columns" type="object" isList="true">
+           <caption>Columns</caption>
+           <category>Display</category>
+           <description></description>
+           <properties>
+               <property key="columnIndex" type="integer" required="true" defaultValue="0">
+                   <caption>Column name</caption>
+                   <category>Column</category>
+                   <description>Zero-based index of the data grid column that should get a custom label.</description>
+               </property>
+               <property key="labelAttr" type="attribute" required="true">
+                   <caption>Column label</caption>
+                   <category>Column</category>
+                   <description>The context object attribute containing the column label</description>
+                   <attributeTypes>
+                       <attributeType name="String" />
+                   </attributeTypes>
+               </property>
+           </properties>
+       </property>
+   </properties>
+</widget>
